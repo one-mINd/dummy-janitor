@@ -1,0 +1,15 @@
+---
+version: "3.3"
+
+services:
+  telegram_janitor_bot:
+    container_name: ${JANITOR_CONTAINER_NAME}
+    build: .
+    restart: always
+    volumes:
+      - ${MATCHERS_PATH}:/matchers_dir
+      - ${SESSIONS_PATH}:/sessions
+    environment:
+      - CLIENT_NAME=$CLIENT_NAME
+      - API_ID=$API_ID
+      - API_HASH=$API_HASH
