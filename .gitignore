@@ -1,2 +1,7 @@
 __pycache__
 sessions/*
+venv/*
+.env
+.vscode
+matchers.db
+matchers

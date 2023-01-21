@@ -1,12 +1,14 @@
 import os
 
 CLIENT_NAME = "sessions/"+os.getenv("CLIENT_NAME")
+
 API_ID = os.getenv("API_ID")
 API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHAT_ID = -1001734437126
+CHAT_ID = os.getenv("CHAT_ID")
 
-MATCHERS_PATH = "/matchers_dir/matchers"
+
+# MATCHERS_PATH = "/matchers_dir/matchers.db"
+MATCHERS_PATH = "matchers.db"
 
 RETENTION_PERIOD = 30
 

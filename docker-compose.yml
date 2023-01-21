@@ -8,7 +8,7 @@ services:
     restart: always
     volumes:
       - ${MATCHERS_PATH}:/matchers_dir
-      - ${SESSIONS_PATH}:/sessions
+      - ${SESSIONS_PATH}:/app/sessions
     environment:
       - CLIENT_NAME=$CLIENT_NAME
       - API_ID=$API_ID
